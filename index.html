@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Strona z układem tabeli i menu z linkami.">
+    <meta name="keywords" content="HTML, menu, tabela, iframe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            width: 65%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        iframe {
+            border: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Nagłówek -->
+        <tr>
+            <td colspan="3">
+                <strong>NAGŁÓWEK</strong>
+            </td>
+        </tr>
+        <!-- Główna część z trzema oknami -->
+        <tr>
+            <td width="20%">
+                
+                <ul>
+                    <li><a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a></li>
+                    <li><a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a></li>
+                    <li><a href="mojastrona.html" target="obszar_glowny">Moja Strona</a></li>
+                    <li><a href="https://terraria.fandom.com/wiki/Terraria_Wiki" target="obszar_glowny">Inna Strona</a></li>
+                </ul>
+            </td>
+            <td>
+                <iframe src="glowny_twoje_nazwisko.html" name="obszar_glowny" width="650" height="420"></iframe>
+                <strong>OBSZAR GŁÓWNY</strong>
+            </td>
+            <td width="20%">
+                
+                <ul>
+                    <li><a href="INST_HTM_technik_2024.pdf" download="INST_HTM_technik_2024">Ściągnij plik</a></li>
+                    <li><a href="tabela_bochkovskyi.html" target="obszar_glowny">Zobacz tabelę</a></li>
+                    <li><a href="formularz_bochkovskyi.html" target="obszar_glowny">Zobacz formularz</a></li>
+                    <li><a href="mailto:labatonih@gmail.com?subject=Zapytanie">Wyślij e-mail</a></li>
+                    <li><a href="zadania_1_6.pdf" target="obszar_glowny">Zobacz zadania Z1-Z6</a></li>
+                </ul>
+            </td>
+        </tr>
+        <!-- Stopka -->
+        <tr>
+            <td colspan="3">
+                <div style="text-align: center; border-top: 1px solid black; padding: 10px; font-size: 14px;">
+                    <strong>STOPKA-Bochkovskyi</strong><br>
+                    Gdańsk, 21-11-2024
+                </div>
+            </td>
+        </tr>        
+    </table>
+</body>
+</html>
